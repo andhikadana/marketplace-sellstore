@@ -63,7 +63,7 @@ while($b = mysqli_fetch_assoc($data)){
             <div class="col-12 col-xs-12 col-md-12 col-md-2 col-lg-2 col-xl-2">
                 <div class="mt-10 card rounded shadow-md border-1" >
                 <div class="card-body text-dark">
-                    <label><h6>Pilih Varian</h6></label>
+                    <label align='center'><h6>Pilih Varian</h6></label>
                     <p class="card-text text-disabled">Warna<br>
                         <select  style="width: 130px; height: 35px;">
                             <option class="page-item active">Merah</option>
@@ -71,7 +71,7 @@ while($b = mysqli_fetch_assoc($data)){
                             <option>Hijau</option>
                         </select>
                     </p>
-                    <div>
+                    <div align='center'>
                       <a href="http://wa.me/6289526923741?text=saya+ingin+membeli+barang">
                         <h6 class="btn btn-success text-white">Beli Sekarang</h6>
                       </a>

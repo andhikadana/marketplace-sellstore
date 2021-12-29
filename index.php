@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="cssm/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="cssm/nav.css">
-    <link rel="stylesheet" href="cssm/nav.js">
-	<link rel="stylesheet" href="cssm/contact.css">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -22,7 +19,10 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="position.css">
+    <link rel="stylesheet" href="cssm/nav.css">
+    <link rel="stylesheet" href="cssm/nav.js">
+	<link rel="stylesheet" href="cssm/contact.css">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
                 
                     <a class="navbar-brand" href="sellstore.php?page=home"><b>Sellstore</b><a>	
                     
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle na"vigation>
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     

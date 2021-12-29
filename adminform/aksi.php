@@ -7,10 +7,11 @@ $gambar = $_POST['Gambar'];
 $nama = $_POST['nama'];
 $harga = $_POST['harga'];
 $deskripsi = $_POST['deskripsi'];
+$kategori = $_POST['kategori'];
 $terjual = $_POST['terjual'];
 $stock = $_POST['stock'];
 // menginput data ke database
- $result = mysqli_query($conn,"INSERT INTO product(`Gambar`,`nama`,`harga`,`deskripsi`,`terjual`,`stock`) VALUES('$gambar','$nama','$harga','$deskripsi','$terjual','$stock')");
+ $result = mysqli_query($conn,"INSERT INTO product(`Gambar`,`nama`,`harga`,`deskripsi`,`kategori`,`terjual`,`stock`) VALUES('$gambar','$nama','$harga','$deskripsi',`$kategori`,'$terjual','$stock')");
 // mengalihkan halaman kembali ke index.php
 print_r($result);
 print_r($_POST);

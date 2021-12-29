@@ -27,6 +27,10 @@
 			</div>
             </tr>
 			<tr>
+			<td>Kategori</td>
+				<td><input type="text" name="kategori" class="form-control" placeholder="Masukkan Kategori" ></td>
+			</tr>
+			<tr>
 				<td>Terjual</td>
 				<td><input type="number" name="terjual" class="form-control" placeholder="Masukkan Terjual" ></td>
 			</tr>

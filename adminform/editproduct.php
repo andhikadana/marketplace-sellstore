@@ -16,7 +16,7 @@
 	<?php
 	include 'koneksi.php';
 	$id = $_GET['id'];
-	$data = mysqli_query($conn,"SELECT`id`, `Gambar`, `nama`, `harga`, `deskripsi`, `terjual`, `stock`  FROM product WHERE id='$id'");
+	$data = mysqli_query($conn,"SELECT`id`, `Gambar`, `nama`, `harga`,`kategori`, `deskripsi`, `terjual`, `stock`  FROM product WHERE id='$id'");
 	while($b = mysqli_fetch_array($data)){
 		?>
 	<div class="container-md shadow-sm bg-info" align="center" style="border-radius: 1%;">
@@ -33,7 +33,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td>NAMA</td>
+					<td>Nama Barang</td>
 					<td><input type="text" name="nama" class="form-control" placeholder="Masukkan Nama" value="<?php echo $b['nama']; ?>"></td>
 				</tr>
 				<tr>
@@ -45,6 +45,10 @@
 					<td>Deskripsi</td>
 					<td><textarea type="text" name="deskripsi" id="form7"  class="md-textarea form-control" placeholder="Masukkan Deskripsi" rows="3"  value="<?php echo $b['deskripsi']; ?>"></textarea></td>
 				</div>
+				</tr>
+				<tr>
+					<td>Kategori</td>
+					<td><input type="text" name="kategori" class="form-control" placeholder="Masukkan Kategori" value="<?php echo $b['kategori']; ?>"></td>
 				</tr>
                 <tr>
 					<td>Terjual</td>

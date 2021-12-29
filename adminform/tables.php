@@ -39,6 +39,7 @@
                                             <th>Nama</th>
                                             <th>Harga</th>
                                             <th>Deskripsi</th>
+                                            <th>Kategori</th>
                                             <th>Terjual</th>
                                             <th>Stock</th>
                                             <th>Opsi</th>
@@ -52,17 +53,17 @@
                                      while($b = mysqli_fetch_object($data)){
                                     ?>
                                         <tr>
-                                            <td><?php echo $no++; ?></td>
-                                            <td><?php echo $b->Gambar;?> </td>
-                                            <td><?php echo $b->nama;?> </td>
-                                            <td><?php echo $b->harga;?> </td>
+                                            <td><?= $no++; ?></td>
+                                            <td><?= $b->Gambar;?> </td>
+                                            <td><?= $b->nama;?> </td>
+                                            <td><?= $b->harga;?> </td>
+                                            <td><?= $b->deskripsi;?></td>
+                                            <td><?= $b->kategori;?></td>
+                                            <td><?= $b->terjual;?> </td>
+                                            <td><?= $b->stock;?> </td>
                                             <td>
-                                              <?php echo $b->deskripsi;?></td>
-                                            <td><?php echo $b->terjual;?> </td>
-                                            <td><?php echo $b->stock;?> </td>
-                                            <td>
-                                                <a class="btn btn-lg bg-success text-decoration-none text-dark" href="editproduct.php?id=<?php echo $b->id; ?>">EDIT</a><br/>
-			    		                        <a class="btn btn-lg bg-danger text-decoration-none text-dark" href="hapusproduct.php?id=<?php echo $b->id; ?>">HAPUS</a>
+                                                <a class="btn btn-lg bg-success text-decoration-none text-dark" href="editproduct.php?id=<?= $b->id; ?>">EDIT</a><br/>
+			    		                        <a class="btn btn-lg bg-danger text-decoration-none text-dark" href="hapusproduct.php?id=<?= $b->id; ?>">HAPUS</a>
 				                            </td>
                                         </tr>
                                         <?php }?>
