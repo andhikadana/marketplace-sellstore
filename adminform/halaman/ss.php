@@ -1,29 +1,29 @@
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"> 
-        <ol class="carousel-indicators">
-            <li data-target="details.phpcarouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="details.phpcarouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="details.phpcarouselExampleIndicators" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="b-block w-100" src="https://placeimg.com/640/480/arch/sepia" alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img class="b-block w-100" src="https://placeimg.com/640/480/arch/sepia" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="b-block w-100" src="https://placeimg.com/640/480/nature/grayscale" alt="Third slide">
-            </div>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <a class="carousel-control-prev" href="carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://placeimg.com/640/480/arch/sepia" class="d-block w-100" alt="0">
+          </div>
+          <div class="carousel-item">
+            <img src="https://placeimg.com/640/480/tech" class="d-block w-100" alt="1">
+          </div>
+          <div class="carousel-item">
+            <img src="https://placeimg.com/640/480/arch" class="d-block w-100" alt="2">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     <br>
     <br>
     <div class="container">
