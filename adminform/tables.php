@@ -21,10 +21,11 @@
                         </ol>
                         <div class="card mb-4 bg-warning text-primary">
                             <div class="card-body">
-                                <h2 align='center'>Informasi Tentang Data Barang</h2>
-                                .
+                                <h2 align='center' class='text-dark'>Informasi Tentang Data Barang</h2>
+                                <h4 align='center'><a href="tambahbrg.php">+ Tambah Barang</a></h4>
                             </div>
                         </div>
+                        <div>
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>

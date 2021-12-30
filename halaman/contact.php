@@ -1,3 +1,4 @@
+
 <br/>
 <br/>
 <br/>
@@ -56,22 +57,22 @@
                         </div>
                         <div class="col-lg-4 col-12">
                             <div class="single-head">
-                                <div class="single-info">
-                                    <i class="fa fa-phone"></i>
-                                    <h4 class="title">Whatsapp Kami:</h4>
+                                <div class="kotak">
+                                <span><i class="fa fa-phone"></i></span>
+                                <h4 class="title">Whatsapp Kami:</h4>
                                     <ul>
-                                        <li><a class="text-dark" href="https://wa.me/qr/OROXPD65NB5JO1">089-526-923-741</a></li>
+                                        <li><a class="text-dark" href="http://wa.me/6289526923741">089-526-923-741</a></li>
                                     </ul>
                                 </div>
-                                <div class="single-info">
+                                <div class="kotak">
                                     <i class="fa fa-envelope-open"></i>
                                     <h4 class="title">Email:</h4>
                                     <ul>
                                         <li><a class="text-dark"  href="mailto:sellstore777@gmail.com?subject=Ini%20adalah%20judul%20email%20default&body=Pesan%20ini%20akan%20secara%20otomatis%20muncul%20lho%21">sellstore777@gmail.com</a>
                                     </ul>
                                 </div>
-                                <div class="single-info">
-                                    <i class="fa fa-location-arrow"></i>
+                                <div class="kotak">
+                                <i class='fa fa-map-marker-alt'></i>
                                     <h4 class="title">Our Address:</h4>
                                     <ul>
                                         <li><a class="text-dark"  href="https://goo.gl/maps/7Z23CTjJnHMbaSyBA" target="_blank">Blolo, Karangampel, Kec. Kaliwungu, Kabupaten Kudus, Jawa Tengah 59332</a></li>
@@ -85,5 +86,6 @@
     </section> 
 </div>
 <br/>
+
     <!--/ End Contact -->
 

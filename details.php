@@ -19,7 +19,7 @@
 <?php 
 include 'koneksi1.php';
 $id = !empty($_GET['id']) ? $_GET['id'] : 0;
-$data = mysqli_query($tambah,'SELECT `id`, `Gambar`, `nama` , `deskripsi` FROM product WHERE id='.$id);
+$data = mysqli_query($tambah,'SELECT `id`, `Gambar`, `nama`, `harga`, `deskripsi`, `kategori` FROM product WHERE id='.$id);
 while($b = mysqli_fetch_assoc($data)){
     ?>
 <body style="background-color: rgba(245, 245, 245, 0.74);">
@@ -33,7 +33,7 @@ while($b = mysqli_fetch_assoc($data)){
                         alt="Card image cap">
                         <div class="card-body text-dark">
                         <p class="card-title text-truncate"><?= $b['nama'];?></p>
-                        <!-- <h6 class="card-subtitle text-danger"><? $b['harga'];?></h6> -->
+                        <h6 class="card-subtitle text-danger">Rp.<?= $b['harga'];?></h6>
                         <p class="card-text text-truncate"><small><?= $b['deskripsi'];?></small>
                         </p>
                     </div>
@@ -46,7 +46,7 @@ while($b = mysqli_fetch_assoc($data)){
                         <h3 class="card-title">Deskripsi produk</h3><br><br/>
                         <h6 class="card-subtitle"><?= $b['nama'];?></a></h6>
                         <br>
-                        <p class="card-subtitle">Kategori: Earphone
+                        <p class="card-subtitle">Kategori= <?= $b['kategori'];?>
                             <br>
                             <br/>
                             Fatures :
@@ -72,7 +72,7 @@ while($b = mysqli_fetch_assoc($data)){
                         </select>
                     </p>
                     <div align='center'>
-                      <a href="http://wa.me/6289526923741?text=saya+ingin+membeli+barang">
+                      <a href="http://wa.me/6289526923741?text=saya+ingin+membeli+barang+ini">
                         <h6 class="btn btn-success text-white">Beli Sekarang</h6>
                       </a>
                     </div>

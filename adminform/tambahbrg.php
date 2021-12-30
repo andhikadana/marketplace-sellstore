@@ -3,8 +3,9 @@
 	<link rel="stylesheet" href="LOGIN/css/bootstrap.css">
 	<title>Tambah Barang</title>
 </head>
+<center>
 <body class="bg-dark">
-<h1><a href="sellstore.php">Masuk Kedalam Toko</a></h1>
+<h1><a href="dash.php">Kembali Ke Dashboard</a></h1>
 <div class="container-md shadow-sm bg-info" align="center" style="border-radius: 1%;">
 <form method="post" action="aksi.php">
 		<table class="table table-hover">
@@ -46,3 +47,4 @@
 </div>
 <h1><a href="tables.php">Kembali Ke Tabel Product</a></h1>
 </body>
+</center>
