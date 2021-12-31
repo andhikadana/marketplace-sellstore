@@ -55,10 +55,11 @@
                                     ?>
                                         <tr>
                                             <td><?= $no++; ?></td>
-                                            <td><?= $b->Gambar;?> </td>
+                                            <td><img src="<?= $b->Gambar;?>" style="width: 80px; height: 80px;"></td>
                                             <td><?= $b->nama;?> </td>
                                             <td><?= $b->harga;?> </td>
-                                            <td><?= $b->deskripsi;?></td>
+                                            <td>
+                                                <textarea style="overflow: scroll;"><?= $b->deskripsi;?></textarea></td>
                                             <td><?= $b->kategori;?></td>
                                             <td><?= $b->terjual;?> </td>
                                             <td><?= $b->stock;?> </td>

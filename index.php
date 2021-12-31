@@ -35,7 +35,7 @@
             <div class="col-12">
                 <nav class="navbar navbar-expand-md navbar-light">
                 
-                    <a class="navbar-brand" href="index.php?page=home"><b>Sellstore</b><a>	
+                    <a class="navbar-brand" href="index.php"><b>Sellstore</b><a>	
                     
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle na"vigation>
                         <span class="navbar-toggler-icon"></span>

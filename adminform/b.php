@@ -63,7 +63,7 @@
                                             <th>Gambar</th>
                                             <th>Nama</th>
                                             <th>Harga</th>
-                                            <th>Deskripsi</th>
+                                            <th class='text-truncate'>Deskripsi</th>
                                             <th>Terjual</th>
                                             <th>Stock</th>
                                             <th>Opsi</th>
@@ -78,11 +78,11 @@
                                     ?>
                                         <tr>
                                             <td><?php echo $no++; ?></td>
-                                            <td><?php echo $b->Gambar;?> </td>
+                                            <td><img src="<?php echo $b->Gambar;?>" style="width: 80px; height: 80px;"></td>
                                             <td><?php echo $b->nama;?> </td>
                                             <td><?php echo $b->harga;?> </td>
                                             <td>
-                                              <?php echo $b->deskripsi;?></td>
+                                              <textarea style="overflow: scroll;"><?php echo $b->deskripsi;?></textarea></td>
                                             <td><?php echo $b->terjual;?> </td>
                                             <td><?php echo $b->stock;?> </td>
                                             <td>

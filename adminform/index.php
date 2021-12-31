@@ -28,7 +28,7 @@
                     <div class="col-lg-12 login-form">
                         <form method="post" action="cek_login.php">
                             <div class="form-group">
-                                <label class="form-control-label">Massukkan Nama</label>
+                                <label class="form-control-label">Massukkan Username</label>
                                 <input type="text" name="username" class="form-control">
                             </div>
                             <div class="form-group"> 
@@ -46,11 +46,11 @@
                                     <?php
                                 if(isset($_GET['pesan'])){
                                 if($_GET['pesan'] == "gagal"){
-                                    echo "Login Gagal! Username Dan Password Salah!";
+                                    echo "Login Gagal! Email atau Password Salah!";
                                 }elseif($_GET['pesan'] == "logout"){
                                      echo "Anda Berhasil Logout";
                                 }elseif($_GET['pesan'] == "belum_login"){
-                                     echo "Anda Harus Login Dulu Untuk Mengakses halaman login";
+                                     echo "Anda Harus Login Dulu Untuk Mengakses halaman Admin";
                                 }
                                 }?>
                                 </div>
@@ -61,7 +61,7 @@
                         </form>
                     </div>
                 </div>
-                <div align='center' class="col-lg-12 col-md-12 text-primary"><p><a href="../register.php">Tidak Punya Akun?Register</a></p></div>
+                <div class="col-lg-12 col-md-12"></div>
             </div>
         </div>
 </body>
