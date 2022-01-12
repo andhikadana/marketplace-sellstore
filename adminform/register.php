@@ -49,7 +49,7 @@
                         </form>
                     </div>
                 </div>
-                <div align='center' class="col-lg-12 col-md-12 text-primary"><p><a href="LOGIN/index.php">Sudah Punya Akun?Login</a></p></div>
+                <div align='center' class="col-lg-12 col-md-12 text-primary"><p><a href="index.php">Sudah Punya Akun?Login</a></p></div>
             </div>
         </div>
         <br/>

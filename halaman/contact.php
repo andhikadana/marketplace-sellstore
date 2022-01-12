@@ -58,10 +58,17 @@
                         <div class="col-lg-4 col-12">
                             <div class="single-head">
                                 <div class="kotak">
-                                <span><i class="fa fa-phone"></i></span>
+                                <span><i class="fab fa-whatsapp"></i></span>
                                 <h4 class="title">Whatsapp Kami:</h4>
                                     <ul>
                                         <li><a class="text-dark" href="http://wa.me/6289526923741">089-526-923-741</a></li>
+                                    </ul>
+                                </div>
+                                <div class="kotak">
+                                    <span><i class="fab fa-instagram"></i></span>
+                                    <h4 class="title">Ikuti Kami:</h4>
+                                    <ul>
+                                        <li><a class="text-dark" href="https://www.instagram.com/sell_store/" >sell_store</li>
                                     </ul>
                                 </div>
                                 <div class="kotak">

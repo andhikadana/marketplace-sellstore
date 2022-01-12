@@ -13,13 +13,11 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
 <?php 
 include 'koneksi1.php';
 $id = !empty($_GET['id']) ? $_GET['id'] : 0;
 $data = mysqli_query($tambah,'SELECT `id`, `Gambar`, `nama`, `harga`, `deskripsi`, `kategori` FROM product WHERE id='.$id);
+$varian = mysqli_query($tambah,"SELECT `id`, `produk_id`, `varian` FROM produk_varian WHERE produk_id='$id' ");
 while($b = mysqli_fetch_assoc($data)){
     ?>
 <body style="background-color: rgba(245, 245, 245, 0.74);">
@@ -66,13 +64,15 @@ while($b = mysqli_fetch_assoc($data)){
                     <label align='center'><h6>Pilih Varian</h6></label>
                     <p class="card-text text-disabled">Warna<br>
                         <select  style="width: 130px; height: 35px;">
-                            <option class="page-item active">Merah</option>
-                            <option>Kuning</option>
-                            <option>Hijau</option>
+                        <?php while($a = mysqli_fetch_assoc($varian)){
+                            ?>
+                            <option><?=$a['varian']?></option>
+                       <?php  }
+                       ?>     
                         </select>
                     </p>
                     <div align='center'>
-                      <a href="http://wa.me/6289526923741?text=saya+ingin+membeli+barang+ini">
+                      <a href="http://wa.me/6289526923741?text=<?= urlencode("saya ingin membeli barang ini ".$b['nama'] ."\n". $urln )?>">
                         <h6 class="btn btn-success text-white">Beli Sekarang</h6>
                       </a>
                     </div>

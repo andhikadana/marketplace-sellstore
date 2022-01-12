@@ -38,7 +38,7 @@
                             <div class="form-group">
                                 <label class="form-control-label">Masukkan Password</label>
                                 <input type="password" name="password" class="form-control">
-                                <a class="text-white" href="../forgetpas.php">Lupa password?</a>
+                                <a class="text-white" href="forgetpas.php">Lupa password?</a>
                             </div>
                             <div class="col-lg-12 loginbttm">
                                 <div class="col-lg-12 login-btm login-text">

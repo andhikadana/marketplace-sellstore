@@ -48,24 +48,25 @@
                                     </thead>
                                     <tbody>
                                     <?php
-                                    include 'koneksi.php';
+                                    include 'admin.php';
                                      $no = 1;
-                                     $data = mysqli_query($conn,"SELECT * FROM product");
-                                     while($b = mysqli_fetch_object($data)){
+                                     $data = mysqli_query($market,"SELECT `id`, `Gambar`, `nama`, `harga`, `deskripsi`, `kategori`, `terjual`, `stock` FROM product");
+                                     while($b = mysqli_fetch_assoc($data)){
                                     ?>
                                         <tr>
                                             <td><?= $no++; ?></td>
-                                            <td><img src="<?= $b->Gambar;?>" style="width: 80px; height: 80px;"></td>
-                                            <td><?= $b->nama;?> </td>
-                                            <td><?= $b->harga;?> </td>
+                                            <td><img src="<?= $b['Gambar'];?>" style="width: 80px; height: 80px;"></td>
+                                            <td><?= $b['nama'];?> </td>
+                                            <td><?= $b['harga'];?> </td>
                                             <td>
-                                                <textarea style="overflow: scroll;"><?= $b->deskripsi;?></textarea></td>
-                                            <td><?= $b->kategori;?></td>
-                                            <td><?= $b->terjual;?> </td>
-                                            <td><?= $b->stock;?> </td>
+                                                <textarea style="overflow: scroll;"><?= $b['deskripsi'];?></textarea></td>
+                                            <td><?= $b['kategori'];?></td>
+                                            <td><?= $b['terjual'];?> </td>
+                                            <td><?= $b['stock'];?> </td>
                                             <td>
-                                                <a class="btn btn-lg bg-success text-decoration-none text-dark" href="editproduct.php?id=<?= $b->id; ?>">EDIT</a><br/>
-			    		                        <a class="btn btn-lg bg-danger text-decoration-none text-dark" href="hapusproduct.php?id=<?= $b->id; ?>">HAPUS</a>
+                                                <a class="btn btn-lg bg-success text-decoration-none text-dark" href="editproduct.php?id=<?= $b['id']; ?>">EDIT</a><br/>
+                                                <a class="btn btn-lg bg-danger text-decoration-none text-dark" href="hapusproduct.php?id=<?= $b['id']; ?>" onclick="return confirm('Yakin Hapus?' )">Hapus</a>
+
 				                            </td>
                                         </tr>
                                         <?php }?>

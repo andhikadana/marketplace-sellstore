@@ -1,7 +1,7 @@
 <?php 
 session_start();
 //include database
-include 'LOGIN/admin.php';
+include 'admin.php';
 
 //menagkap data
 $username = $_POST['username'];

@@ -1,7 +1,16 @@
-
-    <div class="jumbotron jumbotron-fluid">
+<style>
+#jumbotron:hover{
+  background-image: url("gambar/porto.jpg");
+  color: white;
+}
+.display-4:hover{
+  color: white;
+}
+</style>
+<br/>
+    <div class="jumbotron jumbotron-fluid" id="jumbotron">
         <div class="container text-center">
-            <img src="../../forimg/foto.png" width="100">
+            <img src="gambar/foto.png" width="100">
             <h1 class="display-4">Andhika Aji Ardhana</h1>
             <p class="lead">About Me :</p>
         </div>
@@ -9,83 +18,19 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <h1>About</h1>
+                <h1 style="font-family:'Times New Roman', Times, serif">Portofolio</h1>
             </div>
         </div>
-
 
         <div class="row">
-            <div class="col" class="ttg1">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste cupiditate ullam consequuntur
-                    reprehenderit perferendis dolor necessitatibus neque assumenda, pariatur et! Sapiente incidunt
-                    necessitatibus consequuntur! Perspiciatis quod aliquam repudiandae culpa mollitia!
+            <div class="col">
+                    Programer And Founding of <a href="../index.php">Sellstore.</a><br/>
+                    People Who Love To Learn Something New Especially In Coding.
             </div>
-                <div class="col" class="ttg2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius nobis praesentium ipsum,
-                    blanditiis distinctio itaque natus perspiciatis alias sequi porro, consectetur voluptatem
-                    accusantium corporis reiciendis repellendus soluta neque ipsa.
+                <div class="col">
+                    My Vision & Mision : This Online Market Should Be Helping People To Easy Way To shop
                 </div>
         </div>
-    </div>
-
-<div class="container">
-    <div class="row">
-        <div class="col text-center">
-            <h1>Portofolio</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top"  src="https://cdn.pixabay.com/photo/2021/07/30/08/21/street-6509043_960_720.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://cdn.pixabay.com/photo/2021/07/30/08/21/street-6509043_960_720.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top"  src="https://cdn.pixabay.com/photo/2021/07/30/08/21/street-6509043_960_720.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top"  src="https://cdn.pixabay.com/photo/2021/07/30/08/21/street-6509043_960_720.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top"  src="https://cdn.pixabay.com/photo/2021/07/30/08/21/street-6509043_960_720.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top"  src="https://cdn.pixabay.com/photo/2021/07/30/08/21/street-6509043_960_720.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-        </div>
-    </div>
 </div>
 
 

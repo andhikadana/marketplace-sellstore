@@ -45,6 +45,6 @@
 		</table>
 	</form>
 </div>
-<h1><a href="tables.php">Kembali Ke Tabel Product</a></h1>
+<h1><a href="dash.php?page=tabel">Kembali Ke Tabel Product</a></h1>
 </body>
 </center>

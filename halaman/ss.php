@@ -46,14 +46,14 @@
 			?>
             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-4 mb-lg-0"  style="width: 18rem;">
                 <!-- Card-->
-                <a href="index.php?page=detail&id=<?php echo $b['id'];?>&terjual=<?php echo $b['terjual'];?>&stock=<?php echo $b['stock']?>">
+                <a href="index.php?page=detail&id=<?php echo $b['id'];?>">
                 <div class="card rounded shadow-sm border-1 mb-1">
                     <img class="card-img-top"
                         src="<?php echo $b['Gambar']; ?>"
                         alt="Card image cap">
                     <div class="card-body">  
                         <p class="card-title text-truncate text-dark"><?= $b["nama"];?></p>
-                        <h6 class="card-subtitle text-danger">Rp.<?= number_format($b["harga"]);?></h6>
+                        <h6 class="card-subtitle text-danger">Rp <?= number_format($b["harga"],0,",",".");?></h6>
                         <p class="card-text text-truncate text-dark"><small><?= $b["deskripsi"];?></small>
                         </p>
                         <a class="card-link">Terjual:<?= $b['terjual']?></a>

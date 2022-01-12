@@ -1,5 +1,5 @@
 <?php
-include 'LOGIN/admin.php';
+include 'admin.php';
 //tankap data dari for
 $username = $_SESSION['username'];
 $password = md5($_POST['password']);

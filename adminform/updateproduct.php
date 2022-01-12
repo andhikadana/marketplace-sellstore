@@ -1,5 +1,5 @@
 <?php
-include 'koneksi.php';
+include 'admin.php';
 //
 $id = $_POST['id'];
 $gambar = $_POST['Gambar'];
@@ -10,8 +10,8 @@ $kategori = $_POST['kategori'];
 $terjual = $_POST['terjual'];
 $stock = $_POST['stock'];
 
-mysqli_query($conn,"update product set id='$id', Gambar='$gambar', nama='$nama', harga='$harga', kategori='$kategori', deskripsi='$deskripsi', terjual='$terjual', stock='$stock' where id='$id'");
+$result = mysqli_query($market,"update product set id='$id', Gambar='$gambar', nama='$nama', harga='$harga', kategori='$kategori', deskripsi='$deskripsi', terjual='$terjual', stock='$stock' where id='$id'");
 //header("Location:sellstore.php");
-print_r($conn);
-header("Location: dash.php?page=tabel")
+print_r($market);
+print_r($result);
 ?>

@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="LOGIN/css/bootstrap.css">
 </head>
 <body class="bg-dark">
-	<h2><a href="tables.php">KEMBALI KE TABEL PRODUCT</a></h2>
+	<h2><a href="dash.php?pagetabel">KEMBALI KE TABEL PRODUCT</a></h2>
 	<br/>
 	<br/>
 	<!--Judul-->
@@ -14,9 +14,9 @@
 	<!-- </div> -->
 
 	<?php
-	include 'koneksi.php';
+	include 'admin.php';
 	$id = $_GET['id'];
-	$data = mysqli_query($conn,"SELECT`id`, `Gambar`, `nama`, `harga`,`kategori`, `deskripsi`, `terjual`, `stock`  FROM product WHERE id='$id'");
+	$data = mysqli_query($market,"SELECT`id`, `Gambar`, `nama`, `harga`,`kategori`, `deskripsi`, `terjual`, `stock`  FROM product WHERE id='$id'");
 	while($b = mysqli_fetch_array($data)){
 		?>
 	<div class="container-md shadow-sm bg-info" align="center" style="border-radius: 1%;">
@@ -43,7 +43,7 @@
                 <tr>
 				<div class="md-form">
 					<td>Deskripsi</td>
-					<td><textarea type="text" name="deskripsi" id="form7"  class="md-textarea form-control" placeholder="Masukkan Deskripsi" rows="3"  value="<?php echo $b['deskripsi']; ?>"></textarea></td>
+					<td><textarea type="text" name="deskripsi" id="form7"  class="md-textarea form-control" placeholder="Masukkan Deskripsi" rows="3"><?php echo $b['deskripsi']; ?></textarea></td>
 				</div>
 				</tr>
 				<tr>
