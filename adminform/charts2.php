@@ -1,7 +1,7 @@
 <?php 
 	include 'koneksi.php';
-	$bulan = mysqli_query($conn,"SELECT`bulan` FROM penjualan WHERE tahun='2021' ORDER BY id asc");
-	$penghasilan = mysqli_query($conn,"SELECT`hasil_penjualan` FROM penjualan WHERE tahun='2021' ORDER BY id asc");
+	$bulan = mysqli_query($market,"SELECT`bulan` FROM penjualan WHERE tahun='2021' ORDER BY id asc");
+	$penghasilan = mysqli_query($market,"SELECT`hasil_penjualan` FROM penjualan WHERE tahun='2021' ORDER BY id asc");
 	?>
 <!DOCTYPE html>
 <html lang="en">

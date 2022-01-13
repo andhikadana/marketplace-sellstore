@@ -1,6 +1,6 @@
 <?php
 //koneksi database
-include 'LOGIN/admin.php';
+include 'admin.php';
 
 //menangkap form yang diisi
 $username = $_POST['username'];
@@ -10,5 +10,5 @@ $password = md5($_POST['password']);
 $regist = mysqli_query($admin,"INSERT INTO admin(`username`,`email`,`password`) VALUES('$username','$email','$password')");
 //
 
-header("Location: LOGIN/index.php");
+header("Location: index.php");
 ?>

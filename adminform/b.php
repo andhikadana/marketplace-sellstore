@@ -1,6 +1,6 @@
 <div id="layoutSidenav_content">
                 <main>
-                    <div class="col-lg-12 bg-dark" style="color: lime;" align='center'>
+                    <div class="bg-dark" style="color: lime;" align='center'>
                         <?php
 
                         date_default_timezone_set('Asia/Jakarta');
@@ -66,10 +66,12 @@
                                             <th>No</th>
                                             <th>Gambar</th>
                                             <th>Nama</th>
-                                            <th>Harga</th>
+                                            <!-- <th>Harga</th>
                                             <th class='text-truncate'>Deskripsi</th>
-                                            <th>Terjual</th>
-                                            <th>Stock</th>
+                                            <th>Kategori</th> -->
+                                            <th>Varian</th>
+                                            <!-- <th>Terjual</th>
+                                            <th>Stock</th> -->
                                             <th>Opsi</th>
                                         </tr>
                                     </thead>
@@ -77,18 +79,20 @@
                                     <?php
                                     include 'admin.php';
                                      $no = 1;
-                                     $data = mysqli_query($market,"SELECT * FROM product");
+                                     $data = mysqli_query($market,"SELECT * FROM product INNER JOIN produk_varian ON product.id=produk_varian.produk_id");
                                      while($b = mysqli_fetch_object($data)){
                                     ?>
                                         <tr>
                                             <td><?php echo $no++; ?></td>
                                             <td><img src="<?php echo $b->Gambar;?>" style="width: 80px; height: 80px;"></td>
                                             <td><?php echo $b->nama;?> </td>
-                                            <td><?php echo $b->harga;?> </td>
+                                            <!-- <td><?#php $b->harga;?> </td>
                                             <td>
-                                              <textarea style="overflow: scroll;"><?php echo $b->deskripsi;?></textarea></td>
-                                            <td><?php echo $b->terjual;?> </td>
-                                            <td><?php echo $b->stock;?> </td>
+                                              <textarea style="overflow: scroll;"><#?php $b->deskripsi;?></textarea></td>-->
+                                            <!-- <td><?#php echo $b->kategori;?> </td>  -->
+                                            <td><?php echo $b->varian;?> </td>
+                                            <!-- <td><?#php echo $b->terjual;?> </td>
+                                            <td><?#php echo $b->stock;?> </td> -->
                                             <td>
                                                 <a class="btn btn-lg bg-success text-decoration-none text-dark" href="editproduct.php?id=<?php echo $b->id; ?>">EDIT</a><br/>
                                                 <button class="btn btn-lg bg-danger text-decoration-none text-dark" data-toggle="modal" data-target="#exampleModalCenter">HAPUS</button>
@@ -106,7 +110,7 @@
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                                                        <button type="button" class="btn btn-danger text-white" href="hapusproduct.php?id=<?= $b->id; ?>">Hapus</button>
+                                                        <button type="button" class="btn btn-danger text-white" href="hapusproduct.php?id=<?= $b->id; ?>" onclick="return confirm('Apakah Anda Yakin Untuk Menghapus?')">Hapus</button>
                                                     </div>
                                                     </div>
                                                 </div>

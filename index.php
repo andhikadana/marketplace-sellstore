@@ -66,7 +66,7 @@ require 'hitcounter.php';
                             </li>
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                 <p class="nav-link">
-                                    <?php $hit = new HitCounter(); $hit->Hitung(); echo 'Jumlah pengunjung : ' . $hit->tampil();  ?>
+                                    <?php $hit = new HitCounter(); $hit->Hitung(); $hit->tampil();  ?>
                                 </p>
                             </li>
                         </ul>
