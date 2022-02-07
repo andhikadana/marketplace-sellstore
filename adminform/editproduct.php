@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>ANDA TELAH MASUK KEDALAM EDIT</title>
-	<link rel="stylesheet" href="LOGIN/css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body class="bg-dark">
 	<h2><a href="dash.php?pagetabel">KEMBALI KE TABEL PRODUCT</a></h2>

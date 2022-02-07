@@ -58,7 +58,7 @@
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#!">Settings</a></li>
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item text-danger" href="LOGIN/admin/logout.php">Logout</a></li>
+                        <li><a class="dropdown-item text-danger" href="logout.php">Logout</a></li>
                     </ul>
                 </li>
             </ul>
@@ -73,7 +73,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
-                            <a class="nav-link" href="../index.php">
+                            <a class="nav-link" target="_blank" href="../index.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-store-alt"></i></div>
                                 Go To Marketplace
                             </a>

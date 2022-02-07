@@ -61,7 +61,7 @@ while($b = mysqli_fetch_assoc($data)){
             <div class="col-12 col-xs-12 col-md-12 col-md-2 col-lg-2 col-xl-2">
                 <div class="mt-10 card rounded shadow-md border-1" >
                 <div class="card-body text-dark">
-                    <label align='center'><h6>Pilih Varian</h6></label>
+                    <h6 class='card-text' align='center'>Pilih Varian</h6>
                     <p class="card-text text-disabled">Warna<br>
                         <select  style="width: 130px; height: 35px;">
                         <?php while($a = mysqli_fetch_assoc($varian)){

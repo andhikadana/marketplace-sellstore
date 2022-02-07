@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<link rel="stylesheet" href="LOGIN/css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<title>Tambah Barang</title>
 </head>
 <center>

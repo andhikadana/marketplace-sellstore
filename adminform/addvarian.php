@@ -1,28 +1,37 @@
+
 <head>
 	<script src="../../multiple-insert/jquery.min.js" type="text/javascript"></script>
 </head>
 <form action="" method="post" >
-<button type="button" id="btn-tambah-form">Tambah Data Form</button>
     <table>
             <tr>		
 				<td>produk_id</td>
-				<td><input type="number" class="form-control" name="id[]" placeholder="Masukkan id" required></td>
+				<select name="id">
+				<option value="">Select Product</option>
+				<?php
+					include 'koneksi.php';
+					$func = "SELECT`id`, `nama` FROM product";
+					$ax = mysqli_query($market,$func);
+					while($k = mysqli_fetch_assoc($ax)){
+				?>
+				<option value="<?= $k['id'];?>" name="id" ><?= $k['nama'] . "----------------" . $k['id']; ?></option>
+				<?php } ?>
+				</select>
 			</tr>
 			<td>Varian</td>
-				<td><input type="text" name="varian[]" class="form-control" placeholder="Masukkan Varian" required></td>
+				<td><input type="text" name="varian" class="form-control" placeholder="Masukkan Varian" required></td>
 			</tr>
 			<td><input class="bg-success btn-lg" type="submit" value="Submit" ></td>	
 			</tr>
 </table>
 </form>
 <?php
-include 'koneksi.php';
 $id = $_POST['id'];
 $varian = $_POST['varian'];
 $sql = "INSERT INTO produk_varian(`produk_id`,`varian`) VALUES('$id','$varian')";
-$query = mysqli_query($conn,$sql);
+$query = mysqli_query($market,$sql);
 ?>
-	<script>
+	<!-- <script>
 	$(document).ready(function(){ // Ketika halaman sudah diload dan siap
 		$("#btn-tambah-form").click(function(){ // Ketika tombol Tambah Data Form di klik
 			var jumlah = parseInt($("#jumlah-form").val()); // Ambil jumlah data form pada textbox jumlah-form
@@ -52,5 +61,5 @@ $query = mysqli_query($conn,$sql);
 			$("#jumlah-form").val("1"); // Ubah kembali value jumlah form menjadi 1
 		});
 	});
-	</script>
+	</script> -->
 

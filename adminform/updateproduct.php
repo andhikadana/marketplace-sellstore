@@ -14,4 +14,5 @@ $result = mysqli_query($market,"update product set id='$id', Gambar='$gambar', n
 //header("Location:sellstore.php");
 print_r($market);
 print_r($result);
+header("Location: dash.php?page=tabel")
 ?>

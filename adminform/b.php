@@ -57,7 +57,7 @@
                     <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                Data Barang
+                                Data Varian
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
@@ -90,7 +90,7 @@
                                             <td>
                                               <textarea style="overflow: scroll;"><#?php $b->deskripsi;?></textarea></td>-->
                                             <!-- <td><?#php echo $b->kategori;?> </td>  -->
-                                            <td><?php echo $b->varian;?> </td>
+                                            <td class="text-danger"><?php echo $b->varian;?> </td>
                                             <!-- <td><?#php echo $b->terjual;?> </td>
                                             <td><?#php echo $b->stock;?> </td> -->
                                             <td>
