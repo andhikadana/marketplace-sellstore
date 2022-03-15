@@ -1,7 +1,7 @@
 <?php
 include 'admin.php';
 //tankap data dari for
-$username = $_SESSION['username'];
+$username = addslashes($_SESSION['username']);
 $password = md5($_POST['password']);
 //penggantian password
 mysqli_query($admin,"UPDATE admin SET password='$password' WHERE id={$username['id']}");

@@ -6643,6 +6643,10 @@ textarea.form-control-lg {
   white-space: nowrap;
 }
 
+.icon{
+  font-size: 15px;
+}
+
 .vr {
   display: inline-block;
   align-self: stretch;

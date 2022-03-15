@@ -47,7 +47,7 @@
             <!-- Navbar Search-->
              <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0"> 
                 <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search for..." onkeyup="showResult(this.value)" aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <input class="form-control" type="text" placeholder="Search for..." onkeyup="showResult(this.value)" maxlength="25" aria-label="Search for..." aria-describedby="btnNavbarSearch" />
                     <div class="text-white text-decoration-none bg-dark dropdown-item" id="livesearch"></div>
                 </div>
             </form>
@@ -56,7 +56,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="dash.php?page=setting">Settings</a></li>
                         <li><hr class="dropdown-divider" /></li>
                         <li><a class="dropdown-item text-danger" href="logout.php">Logout</a></li>
                     </ul>
@@ -132,13 +132,16 @@
 
                 switch ($page) {
                     case 'tabel':
-                        include 'tables.php';
+                        include 'TASK/tables.php';
                         break;
                     case 'chart':
-                        include 'charts2.php';
+                        include 'TASK/charts2.php';
                         break;
                     default:
                         include '404.html';
+                        break;
+                    case 'setting':
+                        include 'setting.php';
                         break;
                 }
             }else{

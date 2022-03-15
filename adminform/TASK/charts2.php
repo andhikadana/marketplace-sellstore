@@ -1,5 +1,5 @@
 <?php 
-	include 'koneksi.php';
+	include 'admin.php';
 	$bulan = mysqli_query($market,"SELECT`bulan` FROM penjualan WHERE tahun='2021' ORDER BY id asc");
 	$penghasilan = mysqli_query($market,"SELECT`hasil_penjualan` FROM penjualan WHERE tahun='2021' ORDER BY id asc");
 	?>

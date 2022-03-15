@@ -1,6 +1,6 @@
 <?php
 include 'koneksi1.php';
-require 'hitcounter.php';
+require 'counter.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,9 +31,9 @@ require 'hitcounter.php';
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <!-- Navbar Property -->
-    <link rel="stylesheet" href="position.css">
+    <link rel="stylesheet" href="position.cs s">
     <link rel="stylesheet" href="cssm/nav.css">
-    <link rel="stylesheet" href="cssm/nav.js">
+    <link rel="stylesheet" hr ef="cssm/nav.js">
 	<link rel="stylesheet" href="cssm/kontak.css">
 </head>
 
@@ -47,13 +47,13 @@ require 'hitcounter.php';
                 
                     <a class="navbar-brand" href="index.php"><b>Sellstore</b><a>	
                     
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle na"vigation>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <form class="form-inline pl-4 pl-md-0 ml-0 ml-md-4" action='index.php?page=search' method='post'>
-                        <input class="form-control mr-sm-2" id='search' type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control mr-sm-2" name='search' type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                         </form>
                         <ul class="navbar-nav ml-auto py-4 py-md-0">
@@ -63,24 +63,9 @@ require 'hitcounter.php';
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                 <a class="nav-link" href="index.php?page=portofolio">Portfolio</a>
                             </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 disabled">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Not Avalaible Now</a>
-                                    <a class="dropdown-item" href="#">Not Avalaible Now</a>
-                                    <a class="dropdown-item" href="#">Not Avalaible Now</a>
-                                    <a class="dropdown-item" href="#">Not Avalaible Now</a>
-                                </div>
-                            </li>
                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                 <a class="nav-link" href="index.php?page=contact">Contact</a>
                             </li>
-                            <!-- <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <p class="nav-link">
-                                     //Hitcounter Buat Menghitung pengujung
-                                    <?php $hit = new HitCounter(); $hit->Hitung(); $hit->tampil();  ?>
-                                </p>
-                            </li> -->
                         </ul>
                     </div> 
                 </nav>		
@@ -113,6 +98,9 @@ if(isset($_GET['page'])){
         case 'search':
             include "halaman/search.php";
             break;
+        case 'average';
+            include "average.php";
+            break;
         case 'earphone' :
             include "halaman/kategori.php";
             break;
@@ -144,7 +132,7 @@ if(isset($_GET['page'])){
             include "halaman/kategori.php";
             break;
         default:
-            echo "<h1 class=text-danger>Halaman Yang Anda Maksud tidak Ada</h1>";
+            echo "<h1 class=text-danger>Halaman Yang Anda Maksud tidak Ada!</h1>";
             break;
     }
 }else{
@@ -153,6 +141,8 @@ if(isset($_GET['page'])){
 ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 <script type="text/javascript">
+
+
     $(document).ready(function() {
         $('#search').on('keyup', function() {
             $.ajax({

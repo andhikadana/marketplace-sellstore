@@ -1,11 +1,17 @@
+<?php 
+      session_start();
+      if($_SESSION['status']!="login"){
+      header("Location:index.php?pesan=belum_login");
+      }
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>ANDA TELAH MASUK KEDALAM EDIT</title>
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
 </head>
 <body class="bg-dark">
-	<h2><a href="dash.php?pagetabel">KEMBALI KE TABEL PRODUCT</a></h2>
+	<h2><a href="../dash.php?page=tabel">KEMBALI KE TABEL PRODUCT</a></h2>
 	<br/>
 	<br/>
 	<!--Judul-->

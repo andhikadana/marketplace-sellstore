@@ -14,12 +14,12 @@
                                     <h4>Get in touch</h4>
                                     <h3>Write us a message</h3>
                                 </div>
-                                <form class="form" method="post" action="mailto:sellstore777@gmail.com">
+                                <form class="form" method="post" action="halaman/mail.php">
                                     <div class="row">
                                         <div class="col-lg-6 col-12">
                                             <div class="form-group">
                                                 <label>Your Name<span>*</span></label>
-                                                <input name="name" type="text" placeholder="">
+                                                <input name="nama" type="text" placeholder="">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-12">
@@ -37,7 +37,7 @@
                                         <div class="col-lg-6 col-12">
                                             <div class="form-group">
                                                 <label>Your Phone<span>*</span></label>
-                                                <input name="My_telephone" type="text" placeholder="">
+                                                <input name="telephone" type="text" placeholder="">
                                             </div>	
                                         </div>
                                         <div class="col-12">
@@ -75,7 +75,7 @@
                                     <i class="fa fa-envelope-open"></i>
                                     <h4 class="title">Email:</h4>
                                     <ul>
-                                        <li><a class="text-dark"  href="mailto:sellstore777@gmail.com?subject=Ini%20adalah%20judul%20email%20default&body=Pesan%20ini%20akan%20secara%20otomatis%20muncul%20lho%21">sellstore777@gmail.com</a>
+                                        <li><a class="text-dark"  href="mailto:sellstore777@gmail.com?subject=apa%20yang%20ingin%20anda%20sampaikan&body=silahkan%20berkomentar">sellstore777@gmail.com</a>
                                     </ul>
                                 </div>
                                 <div class="kotak">

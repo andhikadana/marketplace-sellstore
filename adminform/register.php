@@ -29,15 +29,15 @@
                         <form method="post" action="tambahreg.php">
                             <div class="form-group">
                                 <label class="form-control-label">Masukkan Nama</label>
-                                <input type="text" name="username" class="form-control">
+                                <input type="text" name="_userName" minlength="7" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label class="form-control-label">Masukkan Email</label>
-                                <input type="email" name="email" class="form-control">
+                                <input type="email" name="_email" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label class="form-control-label">Masukkan Password</label>
-                                <input type="password" name="password" class="form-control">
+                                <input type="password" name="_passWord" minlength="7" maxlength="12" class="form-control">
                             </div>
                             <div class="col-lg-12 loginbttm">
                                 <div class="col-lg-12 login-btm login-text">

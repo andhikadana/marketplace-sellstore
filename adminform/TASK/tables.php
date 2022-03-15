@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,12 +8,12 @@
         <meta name="description" content="" />
         <meta name="D" content="" />
         <title>Tables</title>
-        <script src="jquery.min.js"></script> 
+        <script src="../js/jquery.min.js"></script> 
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
-            <div id="layoutSidenav_content" class="bg-info">
+            <div id="layoutSidenav_content" class="bg-white">
                 <main>
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">Tables</h1>
@@ -20,20 +21,20 @@
                             <li class="breadcrumb-item"><a href="dash.php">Dashboard</a></li>
                             <li class="breadcrumb-item active">Tables</li>
                         </ol>
-                        <div class="card mb-4 bg-warning text-primary">
+                        <div class="card mb-4 bg-white text-dark">
                             <div class="card-body">
-                                <h2 align='center' class='text-dark'>Informasi Tentang Data Barang</h2>
-                                <h4 align='center'><a href="tambahbrg.php">+ Tambah Barang</a></h4>
+                                <h2  class='text-dark'>Informasi Tentang Data Barang</h2>
                             </div>
                         </div>
                         <div>
                         <div class="card mb-4">
                             <div class="card-header">
-                                <i class="fas fa-table me-1"></i>
-                                Data Barang &nbsp
-                                <input type="checkbox" id="check-all">
-                                Pilih Semua |
-                                <i class="fas fa-trash-alt text-danger"></i>
+                                <table class="table-hover">
+                                <td><i class="fas fa-table me-1"></i> Data Barang &nbsp</td>
+                                <td><input type="checkbox">Pilih Semua</td>
+                                <td><a class="btn btn-primary text-white text-decoration-none text-center" href="tambahbrg.php"><i class="fas fa-plus-square"></i> Tambah Barang</a></td>
+                                <td><a href="multiinsert.php" class="btn btn-primary text-decoration-none">Tambah Barang Banyak <i class="fas fa-plus-square"></i></a></td>
+                                </table>
                             </div>
                             <div class="card-body">
                             <form id="form-delete" method="get" action="deletemulti.php">
@@ -49,7 +50,8 @@
                                             <th>Kategori</th>
                                             <th>Terjual</th>
                                             <th>Stock</th>
-                                            <th>Opsi</th>
+                                            <th>EDIT</th>
+                                            <th>HAPUS</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -65,20 +67,17 @@
                                             <td><img src="<?= $b['Gambar'];?>" style="width: 80px; height: 80px;"></td>
                                             <td><?= $b['nama'];?> </td>
                                             <td><?= number_format($b['harga'],0,",",".");?> </td>
-                                            <td>
-                                                <textarea style="overflow: scroll;"><?= $b['deskripsi'];?></textarea></td>
+                                            <td><?php echo substr($b['deskripsi'],0,10);?></td>
                                             <td><?= $b['kategori'];?></td>
                                             <td><?= $b['terjual'];?> </td>
                                             <td><?= $b['stock'];?> </td>
-                                            <td>
-                                                <a class="btn btn-lg bg-success text-decoration-none text-dark" href="editproduct.php?id=<?= $b['id']; ?>"><i class="fas fa-edit"></i></a><br/>
-                                                <a class="btn btn-lg bg-danger text-decoration-none text-dark" href="hapusproduct.php?id=<?= $b['id']; ?>" onclick="return confirm('Yakin Hapus?' )"><i class="fas fa-trash"></i></a>
-				                            </td>
+                                            <td><a class="btn btn-sm bg-success text-decoration-none text-white icon" href="TASK/editproduct.php?id=<?= $b['id']; ?>"><i class="fas fa-edit"></i></a></td>
+                                            <td><a class="btn btn-sm bg-danger text-decoration-none text-white icon" href="TASK/hapusproduct.php?id=<?= $b['id']; ?>" onclick="return confirm('Yakin Hapus?' )"><i class="fas fa-trash"></i></a></td>
                                         </tr>
                                         <?php }?>
                                     </tbody>
                                 </table>
-                                <input type="submit" value="Hapus Banyak" id='submit'>
+                                <input type="submit" class="btn btn-lg bg-danger text-dark" value="Hapus Banyak" id='submit'>
                                      </form>
                             </div>
                         </div>

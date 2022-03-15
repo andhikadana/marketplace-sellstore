@@ -4,8 +4,8 @@ session_start();
 include 'admin.php';
 
 //menagkap data
-$username = $_POST['username'];
-$email = $_POST['email'];
+$username = addslashes($_POST['username']);
+$email = htmlspecialchars($_POST['email']);
 
 //menyeleksi data dari dtabase
 $data = mysqli_query($admin,"SELECT`id`,`username`,`email` FROM admin WHERE username='$username' AND email='$email'");

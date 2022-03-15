@@ -1,3 +1,4 @@
+
 <div id="layoutSidenav_content">
                 <main>
                     <div class="bg-dark" style="color: lime;" align='center'>
@@ -37,9 +38,9 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-success text-white mb-4">
-                                    <div class="card-body">Jumlah Pengunjung <?php include '../visitor.txt';?></div>
+                                    <div class="card-body">Jumlah Pengunjung</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <a class="small text-white stretched-link" href="infocs.php">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -94,8 +95,8 @@
                                             <!-- <td><?#php echo $b->terjual;?> </td>
                                             <td><?#php echo $b->stock;?> </td> -->
                                             <td>
-                                                <a class="btn btn-lg bg-success text-decoration-none text-dark" href="editproduct.php?id=<?php echo $b->id; ?>">EDIT</a><br/>
-                                                <button class="btn btn-lg bg-danger text-decoration-none text-dark" data-toggle="modal" data-target="#exampleModalCenter">HAPUS</button>
+                                                <a class="btn btn-lg bg-success text-decoration-none text-dark" href="editproduct.php?id=<?php echo $b->id; ?>"><i class="fas fa-edit"></i></a><br/>
+                                                <button class="btn btn-lg bg-danger text-decoration-none text-dark" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-trash"></i></button>
                                                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                                     <div class="modal-content">

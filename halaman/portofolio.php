@@ -3,9 +3,6 @@
   background-image: url("gambar/porto.jpg");
   color: white;
 }
-.display-4:hover{
-  color: white;
-}
 </style>
 <br/>
     <div class="jumbotron jumbotron-fluid" id="jumbotron">

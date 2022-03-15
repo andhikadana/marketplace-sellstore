@@ -29,15 +29,15 @@
                         <form method="post" action="cek_login.php">
                             <div class="form-group">
                                 <label class="form-control-label">Massukkan Username</label>
-                                <input type="text" name="username" class="form-control">
+                                <input type="text" name="username" class="form-control" required>
                             </div>
                             <div class="form-group"> 
                             <label class="form-control-label">Masukkan Email</label>
-                                <input type="text" id="staticEmail" name="email" class="form-control">
+                                <input type="text" id="staticEmail" name="email" class="form-control" required>
                             </div> 
                             <div class="form-group">
                                 <label class="form-control-label">Masukkan Password</label>
-                                <input type="password" name="password" class="form-control">
+                                <input type="password" name="password" class="form-control" required>
                                 <a class="text-white" href="forgetpas.php">Lupa password?</a>
                             </div>
                             <div class="col-lg-12 loginbttm">
@@ -51,8 +51,13 @@
                                      echo "Anda Berhasil Logout";
                                 }elseif($_GET['pesan'] == "belum_login"){
                                      echo "Anda Harus Login Dulu Untuk Mengakses halaman Admin";
+                                }elseif($_GET['pesan'] == "kosong"){
+                                    echo "Harap Isi Bagian ini";
+                                }elseif($_GET['pesan'] == 'not_allowed'){
+                                    echo "Tidak Memakai Character yang di-ijinkan";
                                 }
-                                }?>
+                                }
+                                ?>
                                 </div>
                                 <div class="col-lg-12 login-btm login-button">
                                     <button type="submit" class="btn btn-outline-primary">LOGIN</button>

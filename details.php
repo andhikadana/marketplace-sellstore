@@ -22,18 +22,17 @@ while($b = mysqli_fetch_assoc($data)){
     ?>
 <body style="background-color: rgba(245, 245, 245, 0.74);">
     <!-- <script src="js/bootstrap.min.js"></script> -->
-    <div class="container">
+    <div class="container text left">
         <div class="row">
             <div class="col-12 col-xs-12 col-md-12 col-md-4 col-lg-4 col-xl-4">
                 <div class="card rounded shadow-sm border-1">
                     <img class="card-img-top"
-                        src="<?= $b['Gambar'];?>"
+                        src="<?php echo $b['Gambar'];?>"
                         alt="Card image cap">
                         <div class="card-body text-dark">
-                        <p class="card-title text-truncate"><?= $b['nama'];?></p>
-                        <h6 class="card-subtitle text-danger">Rp.<?= $b['harga'];?></h6>
-                        <p class="card-text text-truncate"><small><?= $b['deskripsi'];?></small>
-                        </p>
+                        <h5 class="card-title text-truncate"><?php echo $b['nama'];?></h5>
+                        <h6 class="card-title text-danger">Rp. <?php echo number_format($b['harga'],0,",",".");?></h6>
+                        <h6 class="card-text text-truncate"><small><?php echo $b['deskripsi'];?></small></h6>
                     </div>
                 </div></a>
             </div>
@@ -41,15 +40,14 @@ while($b = mysqli_fetch_assoc($data)){
             <div class="col-12 col-xs-12 col-md-12 col-md-6 col-lg-6 col-xl-6">
                 <div class="mt-10 card rounded shadow-sm border-1" >
                     <div class="card-body text-dark">
-                        <h3 class="card-title">Deskripsi produk</h3><br><br/>
-                        <h6 class="card-subtitle"><?= $b['nama'];?></a></h6>
+                        <h5>Deskripsi produk</h5><br><br/>
+                        <h6><?php echo $b['nama'];?></a></h6>
                         <br>
-                        <p class="card-subtitle">Kategori= <?= $b['kategori'];?>
+                        <h6>Kategori = <a href="index.php?page=<?php echo $b['kategori'];?>"><?php echo $b['kategori'];?></a></h6>
                             <br>
-                            <br/>
-                            Fatures :
+                        <h6>Fatures :</h6>
                             <ul>
-                                <li><?= $b['deskripsi'];?></li>
+                                <li><?php echo $b['deskripsi'];?></li>
                             </ul>
                             <br>
                             <br/>
@@ -66,13 +64,13 @@ while($b = mysqli_fetch_assoc($data)){
                         <select  style="width: 130px; height: 35px;">
                         <?php while($a = mysqli_fetch_assoc($varian)){
                             ?>
-                            <option><?=$a['varian']?></option>
+                            <option><?php echo$a['varian']?></option>
                        <?php  }
                        ?>     
                         </select>
                     </p>
                     <div align='center'>
-                      <a href="http://wa.me/6289526923741?text=<?= urlencode("saya ingin membeli barang ini ".$b['nama'] ."\n". $urln )?>">
+                      <a href="http://wa.me/6289526923741?text=<?php echo urlencode("saya ingin membeli barang ini ".$b['nama'] ."\n". $urln )?>">
                         <h6 class="btn btn-success text-white">Beli Sekarang</h6>
                       </a>
                     </div>
